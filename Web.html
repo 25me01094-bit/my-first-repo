@@ -19,11 +19,11 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: rgb(212, 124, 220);
+            background-color: rgb(8, 102, 123);
             height: 65px;
         }
         .navbar:hover{
-            background-color: burlywood;
+            background-color: rgb(132, 40, 198);
         }
         .logo{
             display: flex;
@@ -31,16 +31,17 @@
             border-radius: 50%;
             justify-content: center;
             align-items: center;
+            margin-left: 25px;
         }
         .heading{
-            text-decoration: underline;
+            text-decoration: none;
             font-size: 25px;
             font-family: Aharoni;
             font-weight: bolder;
             justify-content: center;
             text-align: center;
             display: flex;
-            color: rgb(196, 246, 14);
+            color: white
         }
         .navlinks{
             display: flex;
@@ -49,6 +50,11 @@
             font-weight: bold;
             gap: 30px;
             padding: 15px 25px;
+            
+        }
+        .navlinks:hover{
+            color:yellow;
+            text-decoration: none;
         }
         #Ab{
             background-color: bisque;
@@ -61,7 +67,8 @@
             text-align: center;
         }
         #Me{
-            background-color: azure;
+            background-image: url(https://images.unsplash.com/photo-1668853853439-923e013afff1?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JhZGllbnQlMjBibHVlfGVufDB8fDB8fHww);
+            background-size: auto;
             align-content: center;
             table-layout: auto;
         }
@@ -73,6 +80,11 @@
         .Chart{
             width: 300px;
             height: 300px;
+            margin-left: 620px;
+            
+        }
+        table{
+            margin-left: 620px;
         }
         .Tags{
             width: 60px;
@@ -85,6 +97,7 @@
             color: whitesmoke;
             font-weight: bold;
             font-size: large;
+            align-items: center;
             font-family: Aharoni;
         }
     </style>
@@ -92,12 +105,12 @@
 <body>
     <div class="navbar">
         <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Indian_Institute_of_Technology_Bhubaneswar_Logo.svg/1200px-Indian_Institute_of_Technology_Bhubaneswar_Logo.svg.png" alt="PNG" width="60px" height="55px"></div>
-        <div class="heading"><b>Indian Institute of Technology Bhubaneswar</b></div>
+        <div class="heading"><b>INDIAN INSTITUTE OF TECHNOLOGY BHUBANESWAR</b></div>
         <div class="navlinks">
-            <a href="#">About NSS</a>
-            <a href="#">Our objectives</a>
-            <a href="#">Our members</a>
-            <a href="#">About the script</a>
+            <a href="#" style="color: white;" id="m">About NSS</a>
+            <a href="#" style="color: white;" id="n">Our objectives</a>
+            <a href="#" style="color: white;" id="o">Our members</a>
+            <a href="#" style="color: white;" id="p">About the script</a>
         </div>
     </div>
     <article id="Ab"><h2 style="text-decoration: underline;">About NSS :-</h2>
@@ -109,8 +122,7 @@
     <p>The students are divided into 8 groups containing 9-12 members.<br>Ours is group 2 which contains 11 members.A pie chart regarding the choices of our members for the short film is attached herewith.</p>
     <div class="Chart">
         <canvas id="myPieChart" style="width: 250 px; height: 250 px;"></canvas>
-    <script src="app.js"></script>
-    </div>
+    <script src="app.js"></script></div>
     <table border="3" cellpadding="11">
         <thead>
             <tr><th>Sl. No.</th><th>Names</th><th>Mobile No.</th></tr>
