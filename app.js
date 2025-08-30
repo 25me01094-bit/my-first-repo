@@ -1,4 +1,4 @@
-const ctx = document.getElementById('myPieChart').getContext('2d');
+let ctx = document.getElementById('myPieChart').getContext('2d');
 
 new Chart(ctx,{
     type: 'pie',
@@ -11,3 +11,22 @@ new Chart(ctx,{
     },
     responsive: false
 })
+
+const ab = document.querySelector('#M');
+const Ab=document.getElementById('Ab');
+ab.addEventListener("click", ()=> { 
+    Ab.style.backgroundColor = "blueviolet";
+    Ab.style.fontFamily = "Algerian";
+    Ab.style.fontWeight = "bolder";
+})
+
+const ob = document.querySelector('#N');
+const Ob = document.getElementById('Ob');
+ob.addEventListener("click",() =>{
+    Ob.style.backgroundColor = "yellowgreen";
+    Ob.style.fontWeight = "Bolder";
+})
+
+
+
+
