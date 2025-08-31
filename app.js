@@ -27,6 +27,17 @@ ob.addEventListener("click",() =>{
     Ob.style.fontWeight = "Bolder";
 })
 
+const me = document.querySelector('#O');
+const Me = document.getElementById('Me');
+me.addEventListener("click",() =>{
+    Me.style.fontFamily = "Algerian";
+})
 
+const sc = document.querySelector('#P');
+const Sc = document.getElementById('Sc');
+sc.addEventListener("click", ()=>{
+    Sc.style.backgroundColor = "yellow";
+    Sc.style.fontWeight = "bolder";
+})
 
 
